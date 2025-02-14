@@ -19,7 +19,7 @@ const stories = [
 
 export default function Success() {
   return (
-    <section id="success" className="py-24 bg-muted/50">
+    <section id="testimonials" className="py-24 bg-muted/50">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
