@@ -21,7 +21,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="bg-white dark:bg-gray-900 py-16">
+    <div className="bg-white dark:bg-gray-900 py-16" id="about">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <motion.h2
