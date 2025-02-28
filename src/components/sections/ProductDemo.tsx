@@ -15,18 +15,19 @@ export default function ProductDemo() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="flex items-center rounded-2xl p-8 bg-cover bg-center relative"
+            className="flex items-center rounded-2xl p-8 bg-cover bg-center relative "
             style={{
               backgroundImage: "url('/images/98.jpg')", // Replace with your image path
             }}
           >
+               <div className="absolute inset-0 bg-primary/20 rounded-2xl transform rotate-6" />
             {/* Overlay to improve text readability */}
             <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
             <div className="text-center relative z-10">
               <h2 className="text-3xl font-bold mb-4 text-white">
                 Experience RoboTech Solutions in Action
               </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-gray-200">
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-white">
                 Discover how our collaborative robots enhance productivity, precision, and efficiency in industrial automation.
               </p>
             </div>
