@@ -69,7 +69,7 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="mb-16"
+          className="mb-16 mt-20"
         >
           <h3 className="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">
           <span className="rounded-2xl border-[1px] py-2 px-20 border-primary">

@@ -9,23 +9,30 @@ export default function ProductDemo() {
       <div className="container">
         <div className="grid grid-cols-2 gap-8 items-stretch">
 
+          {/* Left Grid with Background Image */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="flex items-center bg-primary rounded-2xl p-8"
+            className="flex items-center rounded-2xl p-8 bg-cover bg-center relative"
+            style={{
+              backgroundImage: "url('/images/98.jpg')", // Replace with your image path
+            }}
           >
-            <div className="text-center">
-              <h2 className="text-3xl font-bold mb-4">
+            {/* Overlay to improve text readability */}
+            <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
+            <div className="text-center relative z-10">
+              <h2 className="text-3xl font-bold mb-4 text-white">
                 Experience RoboTech Solutions in Action
               </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-gray-200">
                 Discover how our collaborative robots enhance productivity, precision, and efficiency in industrial automation.
               </p>
             </div>
           </motion.div>
 
+          {/* Right Grid */}
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -38,7 +45,7 @@ export default function ProductDemo() {
                   {/* Replace src with the actual demo video URL */}
                   <iframe
                     className="absolute inset-0 w-full h-full"
-                    src="https://www.youtube.com/embed/VIDEO_ID?si=YOUR_VIDEO_ID"
+                    src="https://www.youtube.com/embed/5iV_hB08Uns?si=RY0mFZOE2fGoqHk4  "
                     title="RoboTech Solutions Demo Video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

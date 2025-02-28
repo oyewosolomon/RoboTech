@@ -12,7 +12,8 @@ interface Industry {
 }
 
 const Industries: React.FC = () => {
-  const [expandedIndustry, setExpandedIndustry] = useState<number | null>(null);
+  // Set the initial state to 0 to open the first industry by default
+  const [expandedIndustry, setExpandedIndustry] = useState<number | null>(0);
 
   const toggleExpand = (index: number) => {
     setExpandedIndustry(expandedIndustry === index ? null : index);
@@ -44,7 +45,7 @@ const Industries: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white py-16 dark:bg-gray-900 dark:text-gray-900">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
