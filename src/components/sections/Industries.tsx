@@ -51,9 +51,9 @@ const Industries: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-12"
+          className="text-2xl md:text-4xl font-bold text-center mb-12"
         >
-          <span className="rounded-2xl border-[1px] py-1 px-20 border-primary">
+          <span className="rounded-2xl border-[1px] py-2 px-10 md:px-20 border-primary">
           Industries We Serve
           </span>
         </motion.h2>

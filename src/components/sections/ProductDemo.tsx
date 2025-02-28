@@ -7,7 +7,7 @@ export default function ProductDemo() {
   return (
     <section id="demo" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container">
-        <div className="grid grid-cols-2 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
 
           {/* Left Grid with Background Image */}
           <motion.div

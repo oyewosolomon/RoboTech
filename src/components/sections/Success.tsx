@@ -7,7 +7,7 @@ const stories = [
     quote: "RoboTech's assembly line robots have increased our production efficiency by 40%. Game-changer for our manufacturing process.",
     author: "David Thompson",
     role: "Production Manager, AutoTech Corp",
-    image: "https://images.unsplash.com/photo-1581091220891-83904747b2e0"
+    image: "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8"
   },
   {
     quote: "The quality control systems from RoboTech helped us reduce defects by 30%, ensuring consistent product standards.",
