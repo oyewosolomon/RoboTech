@@ -11,7 +11,7 @@ const Products = () => {
         "Easy integration into existing systems",
         "Customizable for specific tasks"
       ],
-      image: "https://source.unsplash.com/random/400x300?robotics,technology",
+      image: "/images/assembly.jpg",
     },
     {
       title: "Quality Control Systems",
@@ -21,7 +21,7 @@ const Products = () => {
         "Defect detection with AI algorithms",
         "Adaptable to various industries"
       ],
-      image: "https://source.unsplash.com/random/400x300?ai,technology",
+      image: "/images/control.jpg",
     },
     {
       title: "Warehouse Automation Solutions",
@@ -31,7 +31,7 @@ const Products = () => {
         "Automated order fulfillment",
         "Scalable to warehouse size and needs"
       ],
-      image: "https://source.unsplash.com/random/400x300?warehouse,automation",
+      image: "/images/warehouse.jpg",
     },
   ];
 

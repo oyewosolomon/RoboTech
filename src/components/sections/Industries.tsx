@@ -52,7 +52,9 @@ const Industries: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-12"
         >
+          <span className="rounded-2xl border-[1px] py-1 px-20 border-primary">
           Industries We Serve
+          </span>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
-import { Menu } from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -31,6 +31,7 @@ export default function Navbar() {
           {item.label}
         </a>
       ))}
+      
     </>
   );
 
@@ -50,14 +51,21 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent className="flex flex-col gap-4">
               <NavLinks />
+              <Button size="lg" className="gap-2">
+            Explore Our Products <ArrowRight className="h-4 w-4" />
+          </Button>
             </SheetContent>
+           
           </Sheet>
+          
         ) : (
           <nav className="flex items-center space-x-6 ml-6 flex-1">
             <NavLinks />
           </nav>
         )}
-
+          <Button size="lg" className="gap-2 hidden md:flex">
+            Explore Our Products <ArrowRight className="h-4 w-4" />
+          </Button>
         <div className={`${isMobile ? 'mr-2' : 'ml-auto'}`}>
           <ThemeToggle />
         </div>

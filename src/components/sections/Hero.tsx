@@ -11,7 +11,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden h-screen">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-background" />
 

@@ -30,7 +30,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
             <form>
               <input type="email" placeholder="Your email" className="w-full p-2 rounded-lg mb-2" />
-              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg">
+              <button type="submit" className="bg-primary hover:bg-primary/50 text-white font-semibold py-2 px-6 rounded-lg">
                 Subscribe
               </button>
             </form>

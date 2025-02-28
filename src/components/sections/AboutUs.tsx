@@ -28,9 +28,11 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100"
+          className="text-4xl  font-bold text-center mb-8 text-gray-800 dark:text-gray-100"
         >
-          About Us
+          <span className="rounded-2xl border-[1px] py-1 px-20 border-primary">
+            About Us
+          </span>
         </motion.h2>
 
         {/* Introduction */}
@@ -51,11 +53,14 @@ const AboutUs = () => {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
         >
           {stats.map((stat) => (
+            <div>
             <div key={stat.id} className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="flex justify-center text-primary mb-4">{stat.icon}</div>
+              <div className="flex justify-center text-3xl text-primary mb-4">{stat.icon}</div>
               <h3 className="text-3xl font-bold mb-2 text-gray-800 dark:text-gray-100">{stat.value}</h3>
-              <p className="text-gray-600 dark:text-gray-400">{stat.label}</p>
+             
             </div>
+             <p className="text-gray-800 text-2xl text-center my-3 font-bold dark:text-gray-400">{stat.label}</p>
+             </div>
           ))}
         </motion.div>
 
@@ -66,7 +71,11 @@ const AboutUs = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mb-16"
         >
-          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">Our Journey</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-gray-100">
+          <span className="rounded-2xl border-[1px] py-2 px-20 border-primary">
+            Our Journey
+            </span>
+          </h3>
           <div className="relative">
             <div className="absolute left-1/2 h-full w-1 bg-gray-200 dark:bg-gray-700 transform -translate-x-1/2" />
             <div className="space-y-8">
