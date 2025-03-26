@@ -5,6 +5,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        slab: ['Zilla Slab', 'serif'], // For headings
+        sans: ['ui-sans-serif', 'system-ui', 'sans-serif'], // For body
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

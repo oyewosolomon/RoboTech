@@ -24,6 +24,8 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222 89% 51%;
     --radius: 0.75rem;
+    --font-zilla: 'Zilla Slab', serif;
+    --font-sans: 'ui-sans-serif', 'system-ui', sans-serif;
   }
 
   .dark {
@@ -46,6 +48,8 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+    --font-zilla: 'Zilla Slab', serif;
+    --font-sans: 'ui-sans-serif', 'system-ui', sans-serif;
   }
 
   * {
@@ -57,6 +61,26 @@
 
   html {
     scroll-behavior: smooth;
+  }
+   /* Apply Zilla Slab to headings */
+   h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-zilla);
+    @apply font-semibold; /* Zilla Slab looks best at 600 weight */
+    letter-spacing: -0.015em;
+  }
+
+  /* Body text remains sans-serif */
+  body {
+    font-family: var(--font-sans);
+  }
+
+  /* Optional: Zilla Slab utility classes */
+  .font-zilla {
+    font-family: var(--font-zilla);
+  }
+  .font-zilla-italic {
+    font-family: var(--font-zilla);
+    font-style: italic;
   }
 @layer components {
   .container {
