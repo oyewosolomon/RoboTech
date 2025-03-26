@@ -12,8 +12,6 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const navItems = [
   { label: "Features", href: "#features" },
   { label: "About", href: "#about" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Team", href: "#team" },
   { label: "Contact", href: "#contact" }
 ];
 
