@@ -25,7 +25,7 @@
     --ring: 222 89% 51%;
     --radius: 0.75rem;
     --font-zilla: 'Zilla Slab', serif;
-    --font-sans: 'ui-sans-serif', 'system-ui', sans-serif;
+    --font-sans: 'ui-sans-serif', sans-serif;
   }
 
   .dark {
@@ -49,7 +49,7 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
     --font-zilla: 'Zilla Slab', serif;
-    --font-sans: 'ui-sans-serif', 'system-ui', sans-serif;
+    --font-sans: 'ui-sans-serif', sans-serif;
   }
 
   * {
